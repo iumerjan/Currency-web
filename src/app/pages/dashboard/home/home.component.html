@@ -1,0 +1,31 @@
+<section class="content_container p20">
+    <div class="card-body various_roles">
+
+        <form #exchangeCurrencyForm="ngForm">
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6">
+
+                    <select class="custom-select" id="currency_dd" name="currency" [(ngModel)]="selectedCountry"
+                        (change)="setCurrency($event.target.value)">
+                        <option [value]="undefined" selected disabled>-- Select Country --</option>
+                        <option *ngFor="let currency of currencies" [value]="currency.code">
+                            {{currency.currencyName}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <ul class="list-group p-20" *ngIf="selectedCountryCode">
+                <li class="list-group-item {{selectedCountryCode === 'INR' ? 'selected-country' :''}}"><b>Indian Rupee (INR):</b> {{foreignExchangeRates.INR}}</li>
+                <li class="list-group-item {{selectedCountryCode === 'AUD' ? 'selected-country' :''}}"><b>Australian Dollar (AUD):</b> {{foreignExchangeRates.AUD}}</li>
+                <li class="list-group-item {{selectedCountryCode === 'CAD' ? 'selected-country' :''}}"><b>Canadian Dollar (CAD):</b> {{foreignExchangeRates.CAD}}</li>
+                <li class="list-group-item {{selectedCountryCode === 'JPY' ? 'selected-country' :''}}"><b>Japanese Yen (JPY)</b>: {{foreignExchangeRates.JPY}}</li>
+            </ul>
+            <div class=" p-20 text-center" *ngIf="!selectedCountryCode">
+                <h6 class="text-primary">Please select any country to view exchange rates.</h6>
+            </div>
+        </form>
+    </div>
+</section>

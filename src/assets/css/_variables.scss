@@ -1,0 +1,188 @@
+//colors
+$primary_color: #364383;
+$sub_primary_color: #2a71b3;
+$secondary_color: #f8f8f8;
+$sub_secondary_color: #f3f3f3;
+$top_nav: #354282;
+
+
+$c_red: #fe5455;
+$c_blue: #5ac9ff;
+$c_yellow: #fed324;
+$c_green: #32d36b;
+$c_font:#414589;
+$toggle_deactivate: #a0a5a0;
+$toggle_active: #8ecf8c;
+$list_roles: #8c8989;
+$checkbox_active: #2a71b3;
+$login_subheading: #747474;
+
+$black: #000000;
+$white: #ffffff;
+
+$fb_color: #2e64c1;
+$tw_color: #8dc4ea;  
+$gp_color: #ff2626;
+
+$layp0: rgba($primary_color, 0);
+$layp1: rgba($primary_color, 0.1);
+$layp2: rgba($primary_color, 0.2);
+$layp3: rgba($primary_color, 0.3);
+$layp4: rgba($primary_color, 0.4);
+$layp5: rgba($primary_color, 0.5);
+$layp6: rgba($primary_color, 0.6);
+$layp7: rgba($primary_color, 0.7);
+$layp8: rgba($primary_color, 0.8);
+$layp9: rgba($primary_color, 0.9);
+$layp10: rgba($primary_color, 1);
+
+$laysp0: rgba($sub_primary_color, 0);
+$laysp1: rgba($sub_primary_color, 0.1);
+$laysp2: rgba($sub_primary_color, 0.2);
+$laysp3: rgba($sub_primary_color, 0.3);
+$laysp4: rgba($sub_primary_color, 0.4);
+$laysp5: rgba($sub_primary_color, 0.5);
+$laysp6: rgba($sub_primary_color, 0.6);
+$laysp7: rgba($sub_primary_color, 0.7);
+$laysp8: rgba($sub_primary_color, 0.8);
+$laysp9: rgba($sub_primary_color, 0.9);
+$laysp10: rgba($sub_primary_color, 1);
+
+$lays0: rgba($secondary_color, 0);
+$lays1: rgba($secondary_color, 0.1);
+$lays2: rgba($secondary_color, 0.2);
+$lays3: rgba($secondary_color, 0.3);
+$lays4: rgba($secondary_color, 0.4);
+$lays5: rgba($secondary_color, 0.5);
+$lays6: rgba($secondary_color, 0.6);
+$lays7: rgba($secondary_color, 0.7);
+$lays8: rgba($secondary_color, 0.8);
+$lays9: rgba($secondary_color, 0.9);
+$lays10: rgba($secondary_color, 1);
+
+$layss0: rgba($sub_secondary_color, 0);
+$layss1: rgba($sub_secondary_color, 0.1);
+$layss2: rgba($sub_secondary_color, 0.2);
+$layss3: rgba($sub_secondary_color, 0.3);
+$layss4: rgba($sub_secondary_color, 0.4);
+$layss5: rgba($sub_secondary_color, 0.5);
+$layss6: rgba($sub_secondary_color, 0.6);
+$layss7: rgba($sub_secondary_color, 0.7);
+$layss8: rgba($sub_secondary_color, 0.8);
+$layss9: rgba($sub_secondary_color, 0.9);
+$layss10: rgba($sub_secondary_color, 1);
+
+$layb0: rgba($black, 0);
+$layb1: rgba($black, 0.1);
+$layb2: rgba($black, 0.2);
+$layb3: rgba($black, 0.3);
+$layb4: rgba($black, 0.4);
+$layb5: rgba($black, 0.5);
+$layb6: rgba($black, 0.6);
+$layb7: rgba($black, 0.7);
+$layb8: rgba($black, 0.8);
+$layb9: rgba($black, 0.9);
+$layb10: rgba($black, 1);
+
+$layw0: rgba($white, 0);
+$layw1: rgba($white, 0.1);
+$layw2: rgba($white, 0.2);
+$layw3: rgba($white, 0.3);
+$layw4: rgba($white, 0.4);
+$layw5: rgba($white, 0.5);
+$layw6: rgba($white, 0.6);
+$layw7: rgba($white, 0.7);
+$layw8: rgba($white, 0.8);
+$layw9: rgba($white, 0.9);
+$layw10: rgba($white, 1);
+
+//flat colors
+$ftu_color: #1bb899;
+$fgs_color: #1ea286;
+$fem_color: #49b96e;
+$fne_color: #23ae5e;
+$fpr_color: #3596d3;
+$fbh_color: #2581bc;
+$fam_color: #965ba4;
+$fwi_color: #894b9d;
+$fwa_color: #34495d;
+$fmb_color: #2c3e50;
+$fsf_color: #efc419;
+$fog_color: #f39d20;
+$fca_color: #e67d25;
+$fpu_color: #d35728;
+$fal_color: #e74c3b;
+$fpo_color: #c13b2b;
+$fcl_color: #fcfcfc;
+$fsi_color: #bdc1c7;
+$fco_color: #93a4a5;
+$fas_color: #7f8d8d;
+
+//font attach
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato-Black.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-BlackItalic';
+    src: url('../fonts/Lato-BlackItalic.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-BoldItalic';
+    src: url('../fonts/Lato-BoldItalic.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-Hairline';
+    src: url('../fonts/Lato-Hairline.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-HairlineItalic';
+    src: url('../fonts/Lato-HairlineItalic.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url('../fonts/Lato-Italic.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-LightItalic';
+    src: url('../fonts/Lato-LightItalic.ttf') format('truetype');
+};
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+};
+//font family
+$font_lbk: 'Lato-Black';
+$font_lbki: 'Lato-BlackItalic';
+$font_lb: 'Lato-Bold';
+$font_lbi: 'Lato-BoldItalic';
+$font_lhl: 'Lato-Hairline';
+$font_lhi: 'Lato-HairlineItalic';
+$font_li: 'Lato-Italic';
+$font_ll: 'Lato-Light';
+$font_li: 'Lato-LightItalic';
+$font_lr: 'Lato-Regular';
+
+
+// media query
+$mq5b: "screen and (max-width: 565px)";
+$mq7b: "screen and (max-width: 767px)";
+$mq9b: "screen and (max-width: 991px)";
+$mq12b: "screen and (max-width: 1199px)";
+$ipad_pro: "screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)";
+
+$mq5a: "screen and (min-width: 566px)";
+$mq7a: "screen and (min-width: 768px)";
+$mq9a: "screen and (min-width: 992px)";
+$mq12a: "screen and (min-width: 1200px)";
+
+
+//variables ends here

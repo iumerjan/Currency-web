@@ -1,0 +1,303 @@
+/* dashboard styles */
+.dash_counts {
+    .count_box {
+        display: block;
+        justify-content: center;
+        align-self: center;
+        padding: 30px;
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        @include transition(all 0.5s ease-in-out);
+        @include box-shadow(0 0 10px $layb1);
+
+        @media #{$mq12a} {
+            padding: 20px 15px;
+            height: 200px;
+        }
+
+        @media (min-width:1500px) {
+            height: 190px;
+        }
+
+        @media #{$mq12b} {
+            padding: 20px 15px;
+            height: 150px;
+        }
+
+        @media #{$mq9b} {
+            height: 165px;
+        }
+
+        @media #{$mq7b} {
+            padding: 10px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        @media #{$mq5b} {
+            height: 120px;
+        }
+
+        @media (max-width:337px) {
+            margin: 15px 0 0;
+            height: 145px;
+        }
+
+        &:hover {
+            @include transition(all 0.5s ease-in-out);
+            @include box-shadow(0 10px 10px $layb1);
+        }
+
+        i {
+            font-size: 50px;
+            color: $layw10;
+            display: inline-block;
+
+            @media #{$mq12b} {
+                font-size: 40px;
+            }
+
+            @media #{$mq9b} {
+                font-size: 50px;
+            }
+
+            @media #{$mq5b} {
+                font-size: 40px;
+            }
+        }
+
+        h3 {
+            font-size: 45px;
+            color: $layw10;
+            margin: 0;
+            display: inline-block;
+
+            @media #{$mq12b} {
+                font-size: 40px;
+            }
+
+            @media #{$mq9b} {
+                font-size: 50px;
+            }
+
+            @media #{$mq5b} {
+                font-size: 36px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-family: $font_lb;
+            color: $layw10;
+            margin: 10px 0;
+
+            @media #{$mq12b} {
+                font-size: 14px;
+            }
+
+            @media #{$mq7b} {
+                margin: 0;
+            }
+        }
+
+    }
+
+    .red_bg {
+        background: $c_red;
+    }
+
+    .blue_bg {
+        background: $c_blue;
+    }
+
+    .yellow_bg {
+        background: $c_yellow;
+    }
+
+    .green_bg {
+        background: $c_green;
+    }
+}
+
+
+.dash_card {
+    @include box-shadow(0 0 10px $layb1);
+    margin: 20px 0;
+    overflow: hidden;
+    background: $layw10;
+
+    @media #{$mq7b} {
+        margin: 15px 0;
+    }
+
+    .table {
+        margin: 0;
+
+        th {
+            color: $layp10;
+        }
+
+        td,
+        th {
+            border: 0;
+            border-right: 1px solid rgb(217, 217, 217);
+            font-size: 12px;
+        }
+
+        td {
+            .btn-primary {
+                background: $layb7;
+                border: 0;
+
+                @include max(767px) {
+                    font-size: 14px
+                }
+
+                @include max(450px) {
+                    font-size: 12px
+                }
+            }
+        }
+
+        .active {
+            color: #2a71b3;
+            font-weight: 600;
+        }
+
+        .active_green {
+            color: #3F8A14;
+        }
+    }
+
+    .total_p {
+        text-align: center;
+        font-family: $font_lb;
+        font-size: 20px;
+        color: $layb6;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $layb1;
+    }
+
+}
+
+
+.dash_title {
+    display: flex;
+    justify-content: space-between;
+    background: $laysp10;
+    padding: 15px 20px;
+
+    h3 {
+        font-size: 18px;
+        color: $layw10;
+        margin: 0;
+    }
+
+    button {
+        background: white;
+        color: black;
+
+    }
+
+}
+
+.dash_chart {
+    padding: 20px;
+
+    h4 {
+        color: $layb6;
+        font-size: 18px;
+        text-align: center;
+
+        @media #{$mq7b} {
+            margin-top: 30px;
+        }
+    }
+
+    canvas {
+        margin: 30px 0 10px;
+
+    }
+}
+
+/* Help section */
+
+.help-themes {
+    z-index: 999;
+    position: fixed;
+    top: 128px;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    border-bottom-left-radius: 2px;
+    right: -200px;
+    background: #fff;
+    transition: -webkit-transform .15s ease;
+    transition: transform .15s ease;
+    transition: transform .15s ease, -webkit-transform .15s ease;
+    top: 64vh !important;
+    width: 200px;
+
+    .help-themes-icon {
+        display: inline-block;
+        position: absolute;
+        left: -47px;
+        height: 48px;
+        width: 48px;
+        color: #616161;
+        line-height: 44px;
+        text-align: center;
+        font-size: 14px;
+        background-color: #fff;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        top: 0;
+        cursor: pointer;
+        box-shadow: 0 0 10px #00000036;
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .help-themes-body {
+        padding: 10px 10px 0;
+        background-color: #fff;
+        // border-top: 1px solid #e0e0e0;
+        // border-left: 1px solid #e0e0e0;
+        // border-bottom: 1px solid #e0e0e0;
+        color: black;
+        box-shadow: 12px 2px 8px 0px #00000066;
+
+    }
+
+    .help-active {
+        transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+        -o-transform: translateX(-200px);
+        -webkit-transform: translateX(-200px);
+        transition: all 0.5s;
+        // width: 259px;
+
+    }
+
+    .help-themes-icon-active {
+        box-shadow: 11px 1px 8px #00000036;
+    }
+
+    textarea {
+        background: #e7e7e7;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        img {
+            width: 30px;
+        }
+    }
+}
